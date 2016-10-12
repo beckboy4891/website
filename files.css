@@ -1,0 +1,25 @@
+body {
+    background-color: 	#000;
+}
+h1 {
+    color:#0F0;
+    text-align: center;
+}
+p {
+    color:#0F0;
+    text-align: center;
+}
+img {
+	display:block;
+	margin: auto;
+}
+p {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+ul {
+	list-style-type:none;
+	color:#0F0
+}
+li {
+	text-align:center;
+}

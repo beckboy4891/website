@@ -1,12 +1,12 @@
   body {
-    background-color: #000;
+    background: url("background.png");
 }
 h1 {
-    color:#0F0;
+    color: #8A2BE2 ;
     text-align: center;
 }
 p {
-    color: #0F0;
+    color:  #8A2BE2 ;
     text-align: center;
 }
 img {

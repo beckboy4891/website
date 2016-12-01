@@ -1,0 +1,229 @@
+Dear all xob members,
+
+Happy holidays this year our gift to you is a nice little program that you will love to debug.
+The following concept and code (python) is written in .txt format. The cause of this is because of
+the computer I (XOB) am using to write it. This program is a small little game. It is based around the
+real computer game Counter Strike Global Offensive. In csgo we all know that you can open cases to get
+skins. But for those of us who don't want to feed into these money eating bugs, we have created a simple
+cost free program that allows us to open our little cases without dealing with the repercussions.
+This also will teach those of you who are not fluent in python, how the lanuage works. This was of course
+created by the member Python Master, as a start to a long list of programs we will be making, and explaining
+to increase your understanding of this powerful coding language. 
+Happy Holidays to All, Xob and Python master......
+
+The probability of lists of guns below
+RARE KNIVES 5% 1-5
+RARE GUNS 5%   6-11
+NORMAL GUNS 50% 12-62
+RED SKINS 10 % 62-72
+PURPLE 30% 73-100
+
+Concept:
+The program will generate a random number then compare that number to a set of
+lists with corrosponding numbers the list with a matching number then gets a
+random skin chosen from that list. The skin has a value and the player can
+either sell the skin back to the game and try again or keep the skin. When the 
+player chooses to keep the skin the case amount is subtracted from the total
+money, and the skin that is kept is then added to a new list of skins called 
+inventory, the player can stop opening the cases at any time or until he/she 
+runs out of money. After the player runs out of money the amount earned is then
+compared to the original starting amount and profit margine is calculated. The
+player wins by making profit, and loses by not making profit.
+SAMPLE CODE:
+
+from random import randiant
+from blessings import Terminal
+t = Terminal()
+total = 125
+case = 2.5
+start = ("Welcome to the csgo case game")
+print t.green start
+start.center(20)
+print ("You start with 125$ in your paypal, each case costs 2.5$")
+print ("Each time you open a case your account decreases by the amount,")
+print ("the case costs. After you open the case you will have the choice to")
+print ("either keep the skin it gives you and add it to your profit pool,or sell the skin")
+print ("back to the game adding that amount to your total paypal amount. When you")
+print ("are out of money the game will decide if you've made profit or lost money")
+print ("Now that you understand how it works lets get started!")
+print ("Would you like to open a case?")
+another = input("ENTER Yes or NO:")
+Karambitdoppler = 400
+Flipknifetigertooth = 124
+Gutknifesafarimesh = 40
+Bayonetdoppler = 200
+fireserpent = 300
+dragonlore = 2500
+medusa = 2000
+howl = 1500
+neonrider = 1
+bunsenburner = .14
+guardian = 50
+elitebuild = 1
+wormgod = 5
+xray = 1
+battlestar = 2
+killconfirmed = 20
+chatterbox = 1
+chameleon = 1
+naga = 1
+specialdelivery = 1
+aassimov = 26
+assimov = 10
+virus = 1
+if item = range(1,5):
+	total = total - case
+	knives = [Karambitdoppler, Flipknifetigertooth, Bayonetdoppler,Gutknifesafarimesh]
+	weapon = (random.choice(knives))
+elif item = range(6,11):
+	total = total - case
+	rareguns = [fireserpent,dragonlore,medusa,howl]
+	weapon = (random.choice(rareguns))
+elif item = range(12,62):
+	total = total - case
+	normalguns = [neonrider,bunsenburner,guardian,elitebuild,wormgod,naga,specialdelivery]
+	weapon = (random.choice(normalguns))
+elif item = range(62,72)
+	total = total - case
+	redskins = [aassimov]
+	weapon = (random.choice(redskins))
+elif item = range(73,100)
+	total = total - case
+	purpleskins = [virus,]
+	weapon = (random.choice(purpleskins))
+else:
+	print ("there was an error with the program please restart and retry")
+####ACTION AFTER THE WEAPON IS CHOOSE####
+if weapon = Karambitdoppler:
+	var = ("Congradulations you unboxed a Karambit Doppler worth $")
+	print var,Karambitdoppler
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = Flipknifetigertooth:
+	var = ("Congradulations you unboxed a Flip Knife Tiger Tooth worth $")
+	print var,Flipknifetigertooth
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = Gutknifesafarimesh:
+	var = ("Congradulations you unboxed a Gut Knife Safari Mesh worth $")
+	print var,Gutknifesafarimesh
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = Bayonetdoppler:
+	var = ("Congradulations you unboxed a Bayonet Doppler worth $")
+	print var,Bayonetdoppler
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = fireserpent:
+	var = ("Congradulations you unboxed a Ak 47 Fire Serpent  worth $")
+	print var,fireserpent
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = dragonlore:
+	var = ("Congradulations you unboxed a AWP Dragon Lore worth $")
+	print var,dragonlore
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = medusa:
+	var = ("Congradulations you unboxed a AWP Medusa worth $")
+	print var,medusa
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = howl:
+	var = ("Congradulations you unboxed a M4A4 Howl worth $")
+	print var,howl
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = neonrider:
+	var = ("Congradulations you unboxed a Mac 10 Neon Rider worth $")
+	print var,neonrider
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = bunsenburner:
+	var = ("Congradulations you unboxed a Glock 18 Bunsen Burner worth $")
+	print var,bunsenburner
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = guardian:
+	var = ("Congradulations you unboxed a USPS Guardian worth $")
+	print var,guardian
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = elitebuild:
+	var = ("Congradulations you unboxed a Ak 47 Elite Build worth $")
+	print var,elitebuild
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = wormgod:
+	var = ("Congradulations you unboxed a AWP Worm God worth $")
+	print var,wormgod
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = xray:
+	var = ("Congradulations you unboxed a M4A4 Xray worth $")
+	print var,xray
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = battlestar:
+	var = ("Congradulations you unboxed a M4A4 Battle Star worth $")
+	print var,battlestar
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = killconfirmed:
+	var = ("Congradulations you unboxed a USPS Kill Confirmed worth $")
+	print var,killconfirmed
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = chatterbox:
+	var = ("Congradulations you unboxed a Galil Chatter Box worth $")
+	print var,chatterbox
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = chameleon:
+	var = ("Congradulations you unboxed a Aug Chameloeon worth $")
+	print var,chameleon
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = naga:
+	var = ("Congradulations you unboxed a Desert Eagle Naga worth $")
+	print var,naga
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = assimov:
+	var = ("Congradulations you unboxed a P90 Assimov worth $")
+	print var,assimov
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = aassimov:
+	var = ("Congradulations you unboxed a AWP Assimov worth $")
+	print var,aassimov
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+elif weapon = virus :
+	var = ("Congradulations you unboxed a P90 Virus worth $")
+	print var,virus
+	print ("Would you like to sell the skin back to buy more cases or keep it and add it to your skin pool?")
+	choice = input("Type pool to keep it or sell to sell it ENTER CHOICE HERE:")
+else: print ("That is not recognized as a weapon")
+if choice = ("sell"):
+	total = total + weapon
+	print ("would you like to open another case? TYPE yes to open another case Type no to stop")
+	another = input("ENTER CHOICE HERE:")
+elif choice = ("keep"):
+	pool = pool + weapon
+	print ("would you like to open another case? TYPE yes to open another case Type no to stop")
+	another = input("ENTER CHOICE HERE:")
+else:
+	print("Invalid operation request please restart and try again.")
+if total > case:
+	print ("would you like to open another case? TYPE yes to open another case Type no to stop")
+	another = input("ENTER CHOICE HERE:")
+profit = pool - 125
+if total = 0 or total < 0 or another = ("no") and profit < 125 :
+text = ("GABEN WINS")
+	print t.red text
+	text.center(20)
+elif total = 0 or total < 0 or another = ("no") and profit > 125 :
+	text = ("YOU MADE PROFIT")
+	print t.green text
+	text.center(20)
+else:
+print ("Oh no there was an issue on our part sorry restart and try again")
+if another = ("yes"):
+	item = random.randiant(1,100)
+else:
+	print ("Uh-oh looks like there was an issue on our part")
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
